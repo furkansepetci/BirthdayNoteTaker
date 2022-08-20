@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var birthdayText: UITextField!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var birthdayLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let storedName=UserDefaults.standard.object(forKey: "name")
@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         if let newBirthday=storedBirthday as? String{
             birthdayLabel.text = newBirthday
         }
-        
     }
 
     @IBAction func clickedButton(_ sender: Any) {
